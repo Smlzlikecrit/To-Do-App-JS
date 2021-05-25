@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>To Do App</title>
+    <script defer src="scripts/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="task-list-container">
+            <h1 id="header-to-do">To Do: </h1>
+            <ul>
+                <li class="list-item">Take dog to vet
+                <span class="icons">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </span>
+                </li>
+                <li class="list-item">Gorecery shopping
+                    <span class="icons">
+                        <i class="far fa-check-circle"></i>
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </li>
+                <li class="list-item">Make dinner
+                    <span class="icons">
+                        <i class="far fa-check-circle"></i>
+                        <i class="fas fa-edit"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="task-creation-container">
+            <h1 id="header-add-task">Add New Task</h1>
+            <div id="task-creation-form">
+                <form action="#">
+                    <label for="task-name">Task Name: </label><br>
+                    <input type="text" name="task-name" id="task-name"><br>
+                    <label for="task-description">Description: </label><br>
+                    <textarea name="task-description" id="task-description" cols="30" rows="5"></textarea><br>
+                    <div class="button-container">
+                        <input type="submit" value="Clear" id="clear-button">
+                        <input type="submit" value="Add Task" id="add-task-button">
+                    </div>
+                    <div id="btn-div"><button type="submit" id="mobile-submit-btn" class="fas fa-plus"></button></div> 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
